@@ -1,46 +1,104 @@
 .analysis-container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button:disabled {
-    background-color: #cccccc;
-  }
-  
-  input[type="file"],
-  input[type="text"] {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  .error {
-    color: red;
-  }
-  
-  .analysis,
-  .followup {
-    margin-top: 20px;
-  }
-  
-  .followup-result {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+p {
+  font-size: 1.15rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Verdana', sans-serif;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+
+.error {
+  color: #dc3545;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.analysis, .followup {
+  max-width: 800px;
+  min-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.analysis h2, .followup h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.analysis p, .followup p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.followup-result {
+  margin-top: 20px;
+}
+
+.followup-result h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 5px;
+  font-family: 'Arial', sans-serif;
+}
+
+.followup-result p {
+  font-size: 1rem;
+  color: #444;
+}
+
+
+input[type="text"] {
+  display: flex;
+  width: 600px;
+  margin: 10px 0;
+}
