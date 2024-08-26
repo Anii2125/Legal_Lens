@@ -48,8 +48,8 @@ function AnalysisPage() {
     return (
 
     <div className="analysis-container">
-            <h1>Legal Document Analyzer</h1>
-             <p>This tool allows you to analyze legal documents and ask questions about them.</p>
+            <h1>Legal Lens : Legal Document Analyzer</h1>
+             <p>(Upload you file in pdf/docx format.)</p>
              <input
                 type="file"
                 onChange={(e) => setFile(e.target.files[0])}
