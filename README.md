@@ -1,1 +1,1 @@
-# Legal_Lens
+# Legal Lens : Legal Document Analyzer
