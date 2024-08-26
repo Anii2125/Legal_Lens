@@ -1,0 +1,46 @@
+.analysis-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+  }
+  
+  input[type="file"],
+  input[type="text"] {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .analysis,
+  .followup {
+    margin-top: 20px;
+  }
+  
+  .followup-result {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
